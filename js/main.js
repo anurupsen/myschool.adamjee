@@ -1,3 +1,9 @@
+$(".card").click(function () {
+    $(".card").removeClass("active");
+    $(this).addClass("active");
+  });
+
+  
 (function ($) {
     "use strict";
 
@@ -12,7 +18,8 @@
     spinner();
     
     
-    // Initiate the wowjs
+    // Initiate the wowjs 
+
     new WOW().init();
 
 
@@ -83,6 +90,8 @@
     });
 
 
+    
+
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
@@ -106,4 +115,6 @@
     });
     
 })(jQuery);
+
+
 
